@@ -6,7 +6,7 @@ def main():
     # Create the main window
     root = Tk()
 
-    # Initialize database
+    # Initialize the database
     db.connect_db()
 
     # Create and start the UI
