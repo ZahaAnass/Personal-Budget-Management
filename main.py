@@ -1,0 +1,19 @@
+from tkinter import *
+from interface import BudgetGUI
+import database as db
+
+def main():
+    # Create the main window
+    root = Tk()
+
+    # Initialize database
+    db.connect_db()
+
+    # Create and start the UI
+    app = BudgetGUI(root)
+
+    # Start the application
+    app.run()
+
+if __name__ == "__main__":
+    main()
