@@ -7,7 +7,7 @@ def main():
     root = Tk()
 
     # Initialize the database
-    db.connect_db()
+    db.create_tables()
 
     # Create and start the UI
     app = BudgetGUI(root)
